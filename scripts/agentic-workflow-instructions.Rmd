@@ -126,3 +126,21 @@ Requirements:
 Test the system using multiple users and verify that it behaves as expected.
 
 Do not change the approved methodology without explaining why a change is necessary. If the approach needs to be reconsidered, explain the issue and wait for approval.
+
+# Prompt 5 - Evaluation
+
+Evaluate both recommendation systems using appropriate evaluation procedures.
+
+Determine how to evaluate the systems based on the dataset, project objectives, and approaches implemented.
+
+Requirements:
+- Explain the evaluation procedure and why it is appropriate.
+- Ensure that information used to evaluate recommendations was not improperly used during model development.
+- Report appropriate quantitative evaluation results.
+- Include a comparison against an appropriate baseline.
+- Discuss the strengths and limitations of each recommendation system.
+- Make the evaluation reproducible.
+
+Do not assume the systems are effective simply because they produce recommendations. Interpret the results critically and explain what they indicate about recommendation quality.
+
+If the current implementation has important limitations, identify them rather than making unsupported claims about its performance.
