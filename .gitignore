@@ -53,3 +53,6 @@ rsconnect/
 src/*.o
 src/*.so
 src/*.dll
+
+# log(s) from Rmd render
+agentic-workflow-instructions.Rmd
