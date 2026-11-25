@@ -1,1 +1,110 @@
+---
+title: "Instructions for Agentic Workflow"
+author: "Lily Nishizawa"
+output: pdf_document
+---
 
+# Prompt 1 - Project Overview, Planning
+
+I want to build a Steam game recommendation system using collaborative filtering and Steam playtime data.
+
+The project should implement two recommendation models:
+
+**1. Item-to-item collaborative filtering**
+
+Given a selected game, recommend other games that are similar based on the playtime patterns of users who play those games.
+
+**2. User-to-item collaborative filtering**
+
+Given a target user, identify other users with similar gaming preferences and recommend games they have played that the target user has not played.
+
+## Dataset
+
+The dataset is provided in the `data/` directory.
+
+First, inspect the dataset to understand its structure, variables, data types, and any potential data quality issues. Do not assume column names or formats.
+
+## Project requirements
+
+Both recommendation models should:
+
+- Use collaborative filtering rather than content-based recommendations.
+- Use Steam playtime data as implicit feedback.
+- Use appropriate similarity measures, such as cosine similarity.
+- Generate ranked recommendations.
+- Handle sparse data and insufficient interaction histories appropriately.
+
+The item-to-item model should accept a game as input and return the top 10 most similar games, excluding the selected game itself.
+
+The user-to-item model should accept a user ID as input, identify similar users, and recommend the top 10 games based on their playtime activity, excluding all games the target user has already played.
+
+## Expected deliverables
+
+1. Data exploration and preprocessing.
+2. A user-game interaction matrix.
+3. An item-to-item collaborative filtering model.
+4. A user-to-item collaborative filtering model.
+5. Evaluation of both recommendation models.
+6. Appropriate visualizations and interpretation of results.
+7. Reproducible code that runs from beginning to end.
+8. Documentation explaining the methodology and how to use the models.
+
+## Constraints
+
+- Use readable, well-commented code.
+- Explain the statistical and computational methods used.
+- Preserve the original dataset.
+- Organize files into appropriate directories.
+- Use relative file paths.
+- Do not fabricate results or assume information that is not present in the dataset.
+- Prioritize correctness, interpretability, and reproducibility.
+
+## Instructions
+
+Do not write or modify any code yet.
+
+First:
+1. Inspect the dataset.
+2. Summarize its structure and identify potential challenges.
+3. Explain how collaborative filtering can be applied to this dataset.
+4. Propose a detailed implementation plan for both models.
+5. Explain the evaluation methods you recommend.
+
+Identify any assumptions or questions that need clarification.
+
+Wait for my approval before implementing anything.
+
+# Prompt 2 - Data Exploration, Processing, etc.
+
+Implement the data exploration and preparation stage based on the approved plan.
+
+Inspect the dataset and prepare it for the recommendation system. Address the data quality issues and preprocessing requirements identified during your investigation.
+
+Requirements:
+- Make the data preparation process reproducible.
+- Explain the purpose of each preprocessing step.
+- Preserve the information necessary for both recommendation objectives.
+- Document any assumptions or decisions made about the data.
+- Include appropriate checks to verify that the prepared data is usable.
+
+Do not implement either recommendation system yet.
+
+After implementation, summarize the changes, explain the resulting data structure, and run the relevant checks. Wait for review before proceeding.
+
+# Prompt 3 - Item-to-Item Recommendation
+
+Implement the item-to-item recommendation system based on the approved plan.
+
+The system should accept a Steam game as input and return a ranked list of the top 10 recommended games.
+
+Requirements:
+- Follow the approach established in the approved plan.
+- Exclude the input game from its own recommendations.
+- Include relevant information that helps users understand the recommendations.
+- Handle invalid inputs and insufficient data appropriately.
+- Make the recommendation process reproducible.
+- Explain the implementation and the reasoning behind its design.
+
+Test the system using multiple input games and verify that it behaves as expected.
+
+Do not change the approved methodology without explaining why a change is necessary. If the approach needs to be reconsidered, explain the issue and wait for approval.
