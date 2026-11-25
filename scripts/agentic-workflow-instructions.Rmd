@@ -108,3 +108,21 @@ Requirements:
 Test the system using multiple input games and verify that it behaves as expected.
 
 Do not change the approved methodology without explaining why a change is necessary. If the approach needs to be reconsidered, explain the issue and wait for approval.
+
+# Prompt 4 - User-to-Item Recommendation System
+
+Implement the user-to-item recommendation system based on the approved plan.
+
+The system should accept a Steam user as input and return a ranked list of the top 10 games that the user has not played.
+
+Requirements:
+- Follow the approach established in the approved plan.
+- Do not recommend games the user has already played.
+- Include relevant information that helps users understand the recommendations.
+- Handle invalid inputs and insufficient data appropriately.
+- Make the recommendation process reproducible.
+- Explain the implementation and the reasoning behind its design.
+
+Test the system using multiple users and verify that it behaves as expected.
+
+Do not change the approved methodology without explaining why a change is necessary. If the approach needs to be reconsidered, explain the issue and wait for approval.
